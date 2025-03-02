@@ -1,0 +1,14 @@
+{
+  "name": "r507_arduino_app",
+  "version": "1.0.0",
+  "private": true,
+
+  "scripts": {
+    "start": "concurrently \"yarn backend\" \"yarn frontend\"",
+    "backend": "yarn --cwd backend start",
+    "frontend": "yarn --cwd frontend start"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  }
+}

@@ -14,19 +14,19 @@ const int sensorPin = 8;         // Pin capteur optique de fourche
 const int transistorPin = 3;     // Pin transistor pour contrôler le relais
 const int co2Pin = A0;           // Pin capteur CO2
 
-int buttonState = 0;             // Variable pour stocker l'état actuel du bouton
-int lastButtonState = 0;         // Variable pour stocker le dernier état du bouton
-int sensorState = 0;             // Variable pour stocker l'état actuel du capteur
+int buttonState = 0;             
+int lastButtonState = 0;        
+int sensorState = 0;             
 int lastSensorState = 0;         // Variable pour stocker le dernier état du capteur
 unsigned long lastDebounceTime = 0;  // Temps du dernier changement d'état
 unsigned long debounceDelay = 50;    // Délai pour le debounce (en ms)
 
-int co2Value = 0;                // Variable pour stocker la lecture du capteur CO2
-int mosquitoKills = 0;           // Compteur pour le nombre de moustiques détectés
-unsigned long previousMillis = 0; // Pour mesurer les intervalles de temps pour l'envoi LoRa
-unsigned long fanStartMillis = 0; // Pour mesurer le temps de fonctionnement du ventilateur
-const long interval = 30000;     // Intervalle de 30 secondes pour l'envoi des données
-const long fanDuration = 5000;   // Durée de fonctionnement du ventilateur (en ms)
+int co2Value = 0; 
+int mosquitoKills = 0;          
+unsigned long previousMillis = 0;
+unsigned long fanStartMillis = 0;
+const long interval = 30000;    
+const long fanDuration = 5000;   
 
 bool fanActive = false;          // Indique si le ventilateur est activé
 
